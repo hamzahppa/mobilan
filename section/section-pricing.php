@@ -22,7 +22,7 @@
             <li class="list-group-item">Sticker Design by Mobilan</li>
             <li class="list-group-item">+Bonus up to 500Km</li>
           </ul>
-          <!-- <a href="#" class="btn btn-success-outline">Hubungi Kami</a> -->
+          <a href="#" class="btn btn-success-outline">Hubungi Kami</a>
         </div>
       </div>
 
@@ -69,7 +69,7 @@
             <li class="list-group-item">Digital Marketing (Konten & Video)</li>
             <li class="list-group-item">+Bonus up to 500Km</li>
           </ul>
-          <!-- <a href="#" class="btn btn-success-outline">Hubungi Kami</a> -->
+          <a href="#" class="btn btn-success-outline">Hubungi Kami</a>
         </div>
       </div>
 

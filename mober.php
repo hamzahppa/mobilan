@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mobilan Indonesia | Advertising Technology</title>
+    <title>Pendaftaran Mober | Mobilan Indonesia</title>
     <meta name="description" content="Advertising Technology" />
     <meta name="keywords" content="iklan, advertising technology, mobilan, impresi" />
     <meta name="author" content="Mobilan Indonesia" />
@@ -62,11 +62,7 @@
 
     <!-- Navigation
     ================================================== -->
-    <?php include('section/navbar.php'); ?>
-
-    <!-- Hero Section
-    ================================================== -->
-    <?php include('section/section-hero-slide.php'); ?>
+    <?php include('section/navbar-mober.php'); ?>
 
     <!-- Intro
     ================================================== -->
@@ -80,7 +76,7 @@
 
     <!-- Features
     ================================================== -->
-    <?php include('section/section-feature.php'); ?>
+    <?php // include('section/section-feature.php'); ?>
 
     <!-- Videos
     ================================================== -->
@@ -88,15 +84,15 @@
 
     <!-- Pricing
     ================================================== -->
-    <?php include('section/section-pricing.php'); ?>
+    <?php // include('section/section-pricing.php'); ?>
 
     <!-- Testimonials
     ================================================== -->
-    <?php include('section/section-testimonial.php'); ?>
+    <?php // include('section/section-testimonial.php'); ?>
 
     <!-- Text Content
     ================================================== -->
-    <?php // include('section/section-text.php'); ?>
+    <?php include('section/section-text.php'); ?>
 
     <!-- News
     ================================================== -->
@@ -104,11 +100,11 @@
 
     <!-- Sign Up
     ================================================== -->
-    <?php include('section/section-contact.php'); ?>
+    <?php // include('section/section-register.php'); ?>
 
     <!-- Mober
     ================================================== -->
-    <?php include('section/section-mober.php'); ?>
+    <?php // include('section/section-mober.php'); ?>
 
     <!-- Footer
     ================================================== -->
