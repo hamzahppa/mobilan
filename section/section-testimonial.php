@@ -7,7 +7,7 @@
   //                       ),
   //                   );
 ?>
-<section class="section-testimonials text-xs-center bg-inverse">
+<section id="section-testimonials" class="section-testimonials text-xs-center bg-inverse">
   <div class="container">
     <h3 class="sr-only">Testimonials</h3>
     <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
