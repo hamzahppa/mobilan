@@ -1,4 +1,4 @@
-<section id="section-feature" class="section-features text-xs-center">
+<section class="section-features text-xs-center">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
@@ -8,7 +8,7 @@
             <img src="img/dashboard_icon/pie-chart.png" class="display-1 img-fluid icondashboard" alt="Mobilan Assets">
             <h4 class="card-title">Terukur</h4>
             <h6 class="card-subtitle text-muted">Secara Realtime</h6>
-            <p class="card-text">Anda dapat melihat seberapa banyak iklan anda berhasil menjangkau target anda</p>
+            <p class="card-text">Anda dapat melihat seberapa banyak iklan anda berhasil menjangkau target anda + Laporan setiap hari</p>
           </div>
         </div>
       </div>
