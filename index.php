@@ -82,8 +82,8 @@
     ================================================== -->
     <section id="section-intro" class="section-intro bg-faded text-xs-center">
       <div class="container">
-        <h3 class="wp wp-1">Build your beautiful UI, the way you want it, with Land.io</h3>
-        <p class="lead wp wp-2">Craft memorable, emotive experiences with our range of beautiful UI elements.</p>
+        <h3 class="wp wp-1">Tentukan tujuan, target atau daerah anda ingin beriklan</h3>
+        <p class="lead wp wp-2">Kami akan menyampaikan iklan anda sesuai target, untuk mencapai tujuan iklan anda</p>
         <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
       </div>
     </section>
