@@ -62,7 +62,7 @@
 
     <!-- Navigation
     ================================================== -->
-    <?php include('section/navbar.php'); ?>
+    <?php include('section/navbar-mober.php'); ?>
 
     <!-- Hero Section
     ================================================== -->
