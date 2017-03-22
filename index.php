@@ -40,9 +40,9 @@
       .centerimg {
         display: block;
         margin-left: auto;
-        margin-right: auto;        
+        margin-right: auto;
       }
-      .pricing-best, input:focus {
+      .pricing-best, input.form-control:focus, select.form-control:focus {
         border-color: #449D44 !important;
       }
       .pricing-best {
@@ -54,6 +54,16 @@
       }
       .nav-link.btn {
         /*padding: 1em !important;*/
+      }
+      .list-mobilan-feature {
+        font-size: 0.9em !important;
+        font-weight: bold;
+      }
+      @media (max-width: 767px) {
+        ul.nav.navbar-nav > li.active > a.nav-link {
+          color: white !important;
+          background-color: #7F8799 !important;
+        }
       }
     </style>
   </head>
@@ -70,7 +80,7 @@
 
     <!-- Intro
     ================================================== -->
-    <section class="section-intro bg-faded text-xs-center">
+    <section id="section-intro" class="section-intro bg-faded text-xs-center">
       <div class="container">
         <h3 class="wp wp-1">Build your beautiful UI, the way you want it, with Land.io</h3>
         <p class="lead wp wp-2">Craft memorable, emotive experiences with our range of beautiful UI elements.</p>
@@ -90,13 +100,13 @@
     ================================================== -->
     <?php include('section/section-pricing.php'); ?>
 
+    <!-- Text Content
+    ================================================== -->
+    <?php include('section/section-text.php'); ?>
+
     <!-- Testimonials
     ================================================== -->
     <?php include('section/section-testimonial.php'); ?>
-
-    <!-- Text Content
-    ================================================== -->
-    <?php // include('section/section-text.php'); ?>
 
     <!-- News
     ================================================== -->
@@ -105,10 +115,6 @@
     <!-- Sign Up
     ================================================== -->
     <?php include('section/section-contact.php'); ?>
-
-    <!-- Mober
-    ================================================== -->
-    <?php include('section/section-mober.php'); ?>
 
     <!-- Footer
     ================================================== -->
@@ -125,7 +131,23 @@
           $(this).addClass('pricing-best');
           }, function(){
           $(this).removeClass('pricing-best');
-      });    
+      });
+
+      // Smooth scrolling
+      $(function() {
+        $('a[href*="#"]:not([href="#"]):not([href="#collapsingNavbar"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      }); // Smooth scrolling
     </script>
 
     <!-- Chatra {literal} -->
@@ -142,6 +164,6 @@
             if (d.head) d.head.appendChild(s);
         })(document, window, 'Chatra');
     </script>
-    <!-- /Chatra {/literal} -->    
+    <!-- /Chatra {/literal} -->
   </body>
 </html>
