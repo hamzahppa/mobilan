@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"url",
+				"urlencode"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
 				"pad",
 				"padding"
 			],
@@ -392,10 +400,6 @@
 				"error_reporting"
 			],
 			[
-				"bac",
-				"background-color"
-			],
-			[
 				"marg",
 				"margin-left"
 			],
@@ -510,15 +514,19 @@
 			[
 				"tamp",
 				"tampil_riwayat"
-			],
-			[
-				"tan",
-				"tanggal_daftar"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "section/section-contact.php",
+			"settings":
+			{
+				"buffer_size": 2416,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -621,11 +629,17 @@
 	},
 	"expanded_folders":
 	[
-		"/F/#my_web/htdocs/mobilan_landing"
+		"/F/#my_web/htdocs/mobilanv2",
+		"/F/#my_web/htdocs/mobilanv2/section"
 	],
 	"file_history":
 	[
+		"/F/#my_web/htdocs/mobilanv2/mobilan_landing.sublime-project",
+		"/F/#my_web/htdocs/lara-mobilan/resources/views/telegram/send.blade.php",
+		"/F/#my_web/htdocs/mobilan_landing/section/section-contact.php",
+		"/F/#my_web/htdocs/mobilan_landing/mober.php",
 		"/F/#my_web/htdocs/mobilan_landing/css/landio.css",
+		"/F/#my_web/htdocs/mobilan_landing/section/footer.php",
 		"/F/#my_web/htdocs/mobilan_landing/index.php",
 		"/F/#my_web/htdocs/mobilan_landing/scss/plugins/_videojs-landio-skin.scss",
 		"/F/#my_web/htdocs/mobilan_landing/scss/plugins/_animate.scss",
@@ -747,16 +761,11 @@
 		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/kelola_user/list.blade.php",
 		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/halaman/list.blade.php",
 		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/menu/list.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/app/Http/Controllers/Admin/ImageController.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/file/list.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/artikel_kategori/list.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/artikel/list_pengumuman.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/artikel/list_nonaktif.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/artikel/list_cast.blade.php"
+		"/F/#my_web/htdocs/lara-pcm/app/Http/Controllers/Admin/ImageController.php"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -770,6 +779,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\n",
+			"@media ",
+			"@media screen ",
 			"outline",
 			"pricing-best",
 			"$brand-primary",
@@ -894,10 +906,7 @@
 			" 00:00:00",
 			"'\",",
 			"',",
-			"'K",
-			"'",
-			" Khusus",
-			" 00:00:00"
+			"'K"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -905,6 +914,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"PHP_EOL",
 			"449D44",
 			"cartModal",
 			"url('aum/'.$aum->seo_name.'/",
@@ -1031,8 +1041,7 @@
 			"th",
 			"",
 			"<a href=\"online_booking.php?h=1\">",
-			"$pjudul",
-			"col-sm-4"
+			"$pjudul"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1043,8 +1052,47 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "section/section-contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								697
+							],
+							[
+								749,
+								758
+							],
+							[
+								814,
+								823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1090,7 +1138,7 @@
 	"project": "mobilan_landing.sublime-project",
 	"replace":
 	{
-		"height": 114.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
