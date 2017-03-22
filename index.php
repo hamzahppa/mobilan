@@ -82,7 +82,7 @@
     ================================================== -->
     <section id="section-intro" class="section-intro bg-faded text-xs-center">
       <div class="container">
-        <h3 class="wp wp-1">Tentukan tujuan, target atau daerah anda ingin beriklan</h3>
+        <h3 class="wp wp-1">Tentukan tujuan, target dan dimanapun anda ingin beriklan</h3>
         <p class="lead wp wp-2">Kami akan menyampaikan iklan anda sesuai target, untuk mencapai tujuan iklan anda</p>
         <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
       </div>
@@ -106,7 +106,7 @@
 
     <!-- Testimonials
     ================================================== -->
-    <?php include('section/section-testimonial.php'); ?>
+    <?php // include('section/section-testimonial.php'); ?>
 
     <!-- News
     ================================================== -->

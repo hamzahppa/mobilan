@@ -3,11 +3,12 @@
     <h1 class="text-xs-center text-xl-left text-success">Adser (Advertiser)</h1>
     <div class="row p-y-a">
       <div class="col-md-8">
-        <p class="wp wp-7"><b class="text-success">Mobilan.id</b> membantu anda para advertiser untuk mengkampanyekan brand perusahaan anda dengan teknologi advertising yang inovatif dan kreatif dalam sebuah aplikasi dan armada mobil. <br>
-        Memberikan nilai impresi yang lebih baik dibanding billboard serta memberikan data secara <em>realtime</em> untuk anda</p>
-        <div class="text-md-right text-xs-center">
+        <p class="wp wp-7"><b class="text-success">Mobilan.id</b> membantu anda untuk mengiklankan produk atau usaha anda lebih tepat dan terukur dengan teknologi inovatif yang menggabungkan armada mobil dengan aplikasi. <br>
+        Menjadikan iklan anda terukur dan tepat sasaran.</p>
+        <p class="wp wp-7">Jadilah Adser kami dan dapatkan berbagai benefit. Mulai mengiklan kan produk anda dengan cara baru untuk hasil yang lebih tepat sasaran dan menjangkau target market anda.</p>
+<!--         <div class="text-md-right text-xs-center">
           <a href="#section-testimonials" class="btn btn-lg btn-success-outline">Lihat kata client kami</a>
-        </div>
+        </div> -->
       </div>
       <div class="col-md-3 col-md-offset-1 separator-x">
         <img src="img/dashboard_icon/avanza-full-side.jpg" class="img-fluid centerimg" alt="">

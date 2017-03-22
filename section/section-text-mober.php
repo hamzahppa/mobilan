@@ -24,8 +24,9 @@
     <h1 class="text-xs-center text-xl-left text-success">Mober (Driver)</h1>
     <div class="row p-y-a">
       <div class="col-md-8">
-        <p class="wp wp-7"><b class="text-success">Mobilan.id</b> dapat memberikan anda penghasilan tambahan hingga <b>1,5 JUTA</b> per bulan <br>
+        <p class="">Jadilah Mober di <b class="text-success">Mobilan.id</b> dan dapatkan penghasilan tambahan hingga <b>1,5 JUTA</b> per bulan <br>
         Bergabunglah menjadi <b>MOBER</b> kami dan dapatkan <em>penghasilan tambahan</em> pertama anda</p>
+        <p class="">Mober atau Driver adalah anda yang kesehariannya mengemudikan mobil baik untuk menuju kantor atau berkendara kemanapun dengan mobil. Hanya dengan memasangkan iklan di kendaraan anda, anda telah mengubah kendaraan anda menjadi sumber penghasilan tambahan.</p>
 <!--         <div class="text-md-right text-xs-center">
           <a href="#section-testimonials" class="btn btn-lg btn-success-outline">Lihat kata mober lain</a>
         </div> -->

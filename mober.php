@@ -70,7 +70,7 @@
       <div class="container">
         <h3 class="wp wp-1">Bergabunglah sebagai Mober <span class="text-success">Mobilan.id</span></h3>
         <p class="lead wp wp-2">Dapatkan penghasilan tambahan hingga <b>1,5 JUTA</b> tiap bulannya hanya dengan mengemudi seperti keseharian anda</p>
-        <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
+        <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3"> -->
       </div>
     </section>
 
