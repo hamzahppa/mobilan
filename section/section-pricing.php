@@ -1,6 +1,6 @@
 <section id="section-pricing" class="section-pricing bg-faded text-xs-center">
   <div class="container">
-    <h3>Mobilan Body Wrap</h3>
+    <h3>Paket Beriklan Mobilan</h3>
     <div class="row p-y-3">
 
       <div class="col-md-4 p-t-md wp wp-5">

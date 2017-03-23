@@ -7,22 +7,22 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active" style="background-image: url(img/bg-header.jpg);">
       <div class="carousel-caption">
-        <h1 class="display-3">Sebarluaskan Brand anda.</h1>
-        <h2 class="m-b-3 hidden-sm-down"><em>Yay, Slides!</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <h1 class="display-3">Cara baru beriklan</h1>
+        <h2 class="m-b-3 hidden-sm-down"><em>Tinggalkan cara lama</em> dan mulai beralih ke cara baru beriklan. Lebih tepat sasaran dan terukur</h2>
         <a class="btn btn-secondary-outline m-b-2" href="#section-pricing" role="button">Mulai sekarang</a>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url(img/bg-header-2.jpg);">
       <div class="carousel-caption">
-        <h1 class="display-3">Track Iklan secara Real Time.</h1>
-        <h2 class="m-b-3 hidden-sm-down">Includes <strong>all assests</strong> for easy customization.</h2>
+        <h1 class="display-3">Iklan anda bergerak seiring pertumbuhan audience.</h1>
+        <h2 class="m-b-3 hidden-sm-down">Monitor perkembangan brand anda. <strong>FUTURISTIK!!</strong> lihat sejauh apa iklan anda memberikan efek.</h2>
         <a class="btn btn-secondary-outline m-b-2" href="#section-intro" role="button">Pelajari selengkapnya</a>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url(img/bg-header-3.jpg);">
       <div class="carousel-caption">
         <h1 class="display-3"><small>atau</small> Dapatkan penghasilan tambahan.</h1>
-        <h2 class="m-b-3 hidden-sm-down">Craft your journey, <em>absolutely free</em>, with <a href="ui-elements.html" class="jumbolink">Land.io UI kit</a>.</h2>
+        <h2 class="m-b-3 hidden-sm-down">Mulai dapatkan penghasilan tambahan, <em>1.5 JUTA</em> perbulan <a href="mober.php" class="jumbolink">Coba Sekarang</a>.</h2>
         <a class="btn btn-secondary-outline m-b-2" href="./mober.php" role="button">Bergabung jadi Mober</a>
       </div>
     </div>

@@ -18,13 +18,13 @@
       <div class="col-md-6 col-lg-7">
         <ul class="nav nav-inline">
           <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="comingsoon.php">Tentang Kami <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="comingsoon.php">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Privacy & Policy</a>
+            <a class="nav-link" href="comingsoon.php">Privacy & Policy</a>
           </li>
           <li class="nav-item"> <a class="nav-link" href="#landioCarousel">Back to top <span class="icon-caret-up"></span></a>
           </li>

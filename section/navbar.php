@@ -19,12 +19,12 @@
           <a class="nav-link" href="#section-contact">Kontak</a>
         </li>
         <li class="nav-item nav-item-toggable hidden-md-up">
-          <form class="navbar-form">
+<!--           <form class="navbar-form">
             <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
-          </form>
+          </form> -->
         </li>
         <li class="navbar-divider hidden-sm-down"></li>
-        <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
+<!--         <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
           <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="icon-search"></span>
           </a>
@@ -33,7 +33,7 @@
               <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
             </form>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
