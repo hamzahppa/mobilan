@@ -66,10 +66,11 @@
 
     <!-- Intro
     ================================================== -->
-    <section class="section-intro bg-faded text-xs-center">
+    <section id="landioCarousel" class="section-intro bg-faded text-xs-center">
       <div class="container">
         <h3 class="wp wp-1">Bergabunglah sebagai Mober <span class="text-success">Mobilan.id</span></h3>
         <p class="lead wp wp-2">Dapatkan penghasilan tambahan hingga <b>1,5 JUTA</b> tiap bulannya hanya dengan mengemudi seperti keseharian anda</p>
+        <a class="btn btn-success-outline m-b-2" href="" role="button">Segera Hadir</a>
         <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3"> -->
       </div>
     </section>
@@ -121,7 +122,23 @@
           $(this).addClass('pricing-best');
           }, function(){
           $(this).removeClass('pricing-best');
-      });    
+      });
+
+      // Smooth scrolling
+      $(function() {
+        $('a[href*="#"]:not([href="#"]):not([href="#collapsingNavbar"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      }); // Smooth scrolling
     </script>
 
     <!-- Chatra {literal} -->

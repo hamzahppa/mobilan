@@ -1,6 +1,6 @@
 <section id="section-text" class="section-text">
   <div class="container">
-    <form>
+<!--     <form>
       <div class="row">
         <div class="col-md-6 col-xl-6">
           <div class="form-group has-icon-left form-control-name">
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-    </form>
+    </form> -->
     <h1 class="text-xs-center text-xl-left text-success">Mober (Driver)</h1>
     <div class="row p-y-a">
       <div class="col-md-8">
