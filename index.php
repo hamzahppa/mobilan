@@ -120,7 +120,12 @@
     ================================================== -->
     <?php include('section/footer.php'); ?>
 
+    <!-- Modal
+    ================================================== -->
+    <?php include('section/section-modal.php'); ?>
+
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap/modal.js"></script>
     <script src="js/landio.min.js"></script>
     <script>
       function pricingbest() {
@@ -134,7 +139,8 @@
       });
 
       $('#adserForm').submit(function( event ) {
-        event.preventDefault();      
+        event.preventDefault();
+        $("#mobilanModal").modal("show");
         var adserPackage  = $('#adserPackage').val();
         var adserName     = $('#adserName').val();
         var adserContact  = $('#adserContact').val();
@@ -158,9 +164,11 @@
              },
             dataType: 'json',
             success:function(data){
+                $("#mobilanModal").modal("hide");
                 alert('Terimakasih, ' + adserName + '. Kami akan menghubungi anda segera.');
                 console.log(data);
             },error:function(data){
+                $("#mobilanModal").modal("hide");
                 alert('Terjadi gangguan. Maaf atas ketidaknyamanan ini, silahkan ulangi pengiriman form');
                 console.log(data);
             }

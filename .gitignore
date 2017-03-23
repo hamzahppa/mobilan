@@ -2,5 +2,6 @@ _
 .DS_Store
 .codekit-cache
 .sass-cache
+bacajson.php
 config.codekit
 TODO
