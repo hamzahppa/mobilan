@@ -120,7 +120,12 @@
     ================================================== -->
     <?php include('section/footer.php'); ?>
 
+    <!-- Modal
+    ================================================== -->
+    <?php include('section/section-modal.php'); ?>
+
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap/modal.js"></script>
     <script src="js/landio.min.js"></script>
     <script>
       function pricingbest() {
@@ -131,6 +136,43 @@
           $(this).addClass('pricing-best');
           }, function(){
           $(this).removeClass('pricing-best');
+      });
+
+      $('#adserForm').submit(function( event ) {
+        event.preventDefault();
+        $("#mobilanModal").modal("show");
+        var adserPackage  = $('#adserPackage').val();
+        var adserName     = $('#adserName').val();
+        var adserContact  = $('#adserContact').val();
+        // var adserBaseURL  = 'http://localhost:8000';
+        // var originAllowed = 'http://localhost';
+        var adserBaseURL  = 'https://api.mobilan.id';
+        // For Demo
+        var originAllowed = 'https://v2.mobilan.id';
+        // For Real Site
+        // var originAllowed = 'https://mobilan.id';
+
+        // Ajax Form Register
+        $.ajax({
+            method: 'POST',
+            url: adserBaseURL + '/noapi/telegram/ajax',
+            data: {
+                adserPackage  : adserPackage,
+                adserName     : adserName,
+                adserContact  : adserContact,
+                originAllowed : originAllowed
+             },
+            dataType: 'json',
+            success:function(data){
+                $("#mobilanModal").modal("hide");
+                alert('Terimakasih, ' + adserName + '. Kami akan menghubungi anda segera.');
+                console.log(data);
+            },error:function(data){
+                $("#mobilanModal").modal("hide");
+                alert('Terjadi gangguan. Maaf atas ketidaknyamanan ini, silahkan ulangi pengiriman form');
+                console.log(data);
+            }
+        });
       });
 
       // Smooth scrolling
