@@ -40,9 +40,9 @@
       .centerimg {
         display: block;
         margin-left: auto;
-        margin-right: auto;        
+        margin-right: auto;
       }
-      .pricing-best, input:focus {
+      .pricing-best, input.form-control:focus, select.form-control:focus {
         border-color: #449D44 !important;
       }
       .pricing-best {
@@ -55,6 +55,19 @@
       .nav-link.btn {
         /*padding: 1em !important;*/
       }
+      .list-mobilan-feature {
+        font-size: 0.9em !important;
+        font-weight: bold;
+      }
+      .bg-inverse .navbar-toggler {
+        color: black !important;
+      }
+      @media (max-width: 767px) {
+        ul.nav.navbar-nav > li.active > a.nav-link {
+          color: white !important;
+          background-color: #7F8799 !important;
+        }
+      }
     </style>
   </head>
 
@@ -66,10 +79,11 @@
 
     <!-- Intro
     ================================================== -->
-    <section class="section-intro bg-faded text-xs-center">
-      <div class="container">
+    <section id="landioCarousel" class="section-intro bg-faded text-xs-center">
+      <div class="container" style="padding-top: 75px">
         <h3 class="wp wp-1">Bergabunglah sebagai Mober <span class="text-success">Mobilan.id</span></h3>
         <p class="lead wp wp-2">Dapatkan penghasilan tambahan hingga <b>1,5 JUTA</b> tiap bulannya hanya dengan mengemudi seperti keseharian anda</p>
+        <!-- <a class="btn btn-success-outline m-b-2" href="" role="button">Segera Hadir</a> -->
         <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3"> -->
       </div>
     </section>
@@ -121,7 +135,59 @@
           $(this).addClass('pricing-best');
           }, function(){
           $(this).removeClass('pricing-best');
-      });    
+      });
+
+      // ajax form
+      $('#moberForm').submit(function( event ) {
+        event.preventDefault();
+        $("#mobilanModal").modal("show");
+        var moberName     = $('#moberName').val();
+        var moberContact  = $('#moberContact').val();
+        // var adserBaseURL  = 'http://localhost:8000';
+        // var originAllowed = 'http://localhost';
+        var adserBaseURL  = 'https://api.mobilan.id';
+        // For Demo
+        var originAllowed = 'https://sandbox.mobilan.id';
+        // For Real Site
+        // var originAllowed = 'https://mobilan.id';
+
+        // Ajax Form Register
+        $.ajax({
+            method: 'POST',
+            url: adserBaseURL + '/noapi/telegram/moberAjax',
+            data: {
+                moberName     : moberName,
+                moberContact  : moberContact,
+                originAllowed : originAllowed
+             },
+            dataType: 'json',
+            success:function(data){
+                $("#mobilanModal").modal("hide");
+                alert('Terimakasih, ' + moberName + '. Kami akan menghubungi anda segera.');
+                console.log(data);
+            },error:function(data){
+                $("#mobilanModal").modal("hide");
+                alert('Terjadi gangguan. Maaf atas ketidaknyamanan ini, silahkan ulangi pengiriman form');
+                console.log(data);
+            }
+        });
+      });
+
+      // Smooth scrolling
+      $(function() {
+        $('a[href*="#"]:not([href="#"]):not([href="#collapsingNavbar"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      }); // Smooth scrolling
     </script>
 
     <!-- Chatra {literal} -->

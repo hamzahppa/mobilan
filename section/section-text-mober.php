@@ -1,17 +1,17 @@
 <section id="section-text" class="section-text">
   <div class="container">
-    <form>
+    <form method="post" action="" enctype="multipart/form-data" id="moberForm">
       <div class="row">
         <div class="col-md-6 col-xl-6">
           <div class="form-group has-icon-left form-control-name">
             <label class="sr-only" for="inputName">Nama Anda</label>
-            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Nama Anda" required>
+            <input type="text" class="form-control form-control-lg" id="moberName" placeholder="Nama Anda" required>
           </div>
         </div>        
         <div class="col-md-6 col-xl-4">
           <div class="form-group has-icon-left form-control-email">
             <label class="sr-only" for="inputEmail">Kontak</label>
-            <input type="text" class="form-control form-control-lg" id="inputEmail" placeholder="Nomor Handphone" required>
+            <input type="text" class="form-control form-control-lg" id="moberContact" placeholder="Nomor Handphone" required>
           </div>
         </div>
         <div class="col-md-6 col-xl-2">

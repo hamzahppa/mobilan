@@ -22,7 +22,7 @@
     <div class="carousel-item" style="background-image: url(img/bg-header-3.jpg);">
       <div class="carousel-caption">
         <h1 class="display-3"><small>atau</small> Dapatkan penghasilan tambahan.</h1>
-        <h2 class="m-b-3 hidden-sm-down">Mulai dapatkan penghasilan tambahan, <em>1.5 JUTA</em> perbulan <a href="mober.php" class="jumbolink">Coba Sekarang</a>.</h2>
+        <h2 class="m-b-3 hidden-sm-down">Mulai dapatkan penghasilan tambahan, <em>1.5 JUTA</em> perbulan. <a href="mober.php" class="jumbolink">Coba Sekarang</a>.</h2>
         <a class="btn btn-secondary-outline m-b-2" href="./mober.php" role="button">Bergabung jadi Mober</a>
       </div>
     </div>
