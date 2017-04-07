@@ -528,10 +528,7 @@
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n    <title>Mobilan Indonesia | Advertising Technology</title>\n    <meta name=\"description\" content=\"Advertising Technology\" />\n    <meta name=\"keywords\" content=\"iklan, advertising technology, mobilan, impresi\" />\n    <meta name=\"author\" content=\"Mobilan Indonesia\" />\n\n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"img/favicon/apple-icon-57x57.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"img/favicon/apple-icon-60x60.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"img/favicon/apple-icon-72x72.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"img/favicon/apple-icon-76x76.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"img/favicon/apple-icon-114x114.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"img/favicon/apple-icon-120x120.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"img/favicon/apple-icon-144x144.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"img/favicon/apple-icon-152x152.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"img/favicon/apple-icon-180x180.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"img/favicon/android-icon-192x192.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"img/favicon/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"img/favicon/favicon-96x96.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"img/favicon/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"img/favicon/manifest.json\">\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"msapplication-TileImage\" content=\"img/favicon/ms-icon-144x144.png\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n    <link rel=\"stylesheet\" href=\"css/landio.css\">\n    <link rel=\"stylesheet\" href=\"font-awesome/font-awesome.css\">\n    <style>\n      .icondashboard {\n        height: 100px;\n        display: block;\n        margin-left: auto;\n        margin-right: auto;\n        margin-bottom: 30px;\n        margin-top: 30px;\n      }\n      .centerimg {\n        display: block;\n        margin-left: auto;\n        margin-right: auto;\n      }\n      .pricing-best, input.form-control:focus, select.form-control:focus {\n        border-color: #449D44 !important;\n      }\n      .pricing-best {\n        margin-right: auto !important;\n        margin-left: auto !important;\n      }\n      .pricing-best > .card-header {\n        background-color: #449D44 !important;\n      }\n      .nav-link.btn {\n        /*padding: 1em !important;*/\n      }\n      .list-mobilan-feature {\n        font-size: 0.9em !important;\n        font-weight: bold;\n      }\n      @media (max-width: 767px) {\n        ul.nav.navbar-nav > li.active > a.nav-link {\n          color: white !important;\n          background-color: #7F8799 !important;\n        }\n      }\n    </style>\n  </head>\n\n  <body>\n\n    <!-- Navigation\n    ================================================== -->\n    <?php include('section/navbar.php'); ?>\n\n    <!-- Hero Section\n    ================================================== -->\n    <?php include('section/section-hero-slide.php'); ?>\n\n    <!-- Intro\n    ================================================== -->\n    <section id=\"section-intro\" class=\"section-intro bg-faded text-xs-center\">\n      <div class=\"container\">\n        <h3 class=\"wp wp-1\">Build your beautiful UI, the way you want it, with Land.io</h3>\n        <p class=\"lead wp wp-2\">Craft memorable, emotive experiences with our range of beautiful UI elements.</p>\n        <img src=\"img/mock.png\" alt=\"iPad mock\" class=\"img-fluid wp wp-3\">\n      </div>\n    </section>\n\n    <!-- Features\n    ================================================== -->\n    <?php include('section/section-feature.php'); ?>\n\n    <!-- Videos\n    ================================================== -->\n    <?php // include('section/section-video.php'); ?>\n\n    <!-- Pricing\n    ================================================== -->\n    <?php include('section/section-pricing.php'); ?>\n\n    <!-- Text Content\n    ================================================== -->\n    <?php include('section/section-text.php'); ?>\n\n    <!-- Testimonials\n    ================================================== -->\n    <?php include('section/section-testimonial.php'); ?>\n\n    <!-- News\n    ================================================== -->\n    <?php // include('section/section-news.php'); ?>\n\n    <!-- Sign Up\n    ================================================== -->\n    <?php include('section/section-contact.php'); ?>\n\n    <!-- Footer\n    ================================================== -->\n    <?php include('section/footer.php');\n    ?>\n\n    <script src=\"js/jquery-1.12.1.min.js\"></script>\n    <script src=\"js/landio.min.js\"></script>\n    <script>\n      function pricingbest() {\n        $('.pricing-box').addClass('pricing-best');\n      }\n      // hover\n      $(\".pricing-box\").hover(function(){\n          $(this).addClass('pricing-best');\n          }, function(){\n          $(this).removeClass('pricing-best');\n      });\n\n      $('#adserForm').submit(function( event ) {\n        event.preventDefault();      \n        var adserPackage  = $('#adserPackage').val();\n        var adserName     = $('#adserName').val();\n        var adserContact  = $('#adserContact').val();\n        var adserBaseURL  = 'http://localhost:8000';\n        var originAllowed = 'http://localhost';\n\n        // Ajax Form Register\n        $.ajax({\n            method: 'POST',\n            url: adserBaseURL + '/noapi/telegram/ajax',\n            data: {\n                adserPackage  : adserPackage,\n                adserName     : adserName,\n                adserContact  : adserContact,\n                originAllowed : originAllowed\n             },\n            dataType: 'json',\n            success:function(data){\n                alert('Terimakasih, ' + adserName + '. Kami akan menghubungi anda segera.');\n                console.log(data);\n            },error:function(data){\n                alert('Terjadi gangguan. Maaf atas ketidaknyamanan ini, silahkan ulangi pengiriman form');\n                console.log(data);\n            }\n        });\n      });\n\n      // Smooth scrolling\n      $(function() {\n        $('a[href*=\"#\"]:not([href=\"#\"]):not([href=\"#collapsingNavbar\"])').click(function() {\n          if (location.pathname.replace(/^\\//,'') == this.pathname.replace(/^\\//,'') && location.hostname == this.hostname) {\n            var target = $(this.hash);\n            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');\n            if (target.length) {\n              $('html, body').animate({\n                scrollTop: target.offset().top\n              }, 1000);\n              return false;\n            }\n          }\n        });\n      }); // Smooth scrolling\n    </script>\n\n    <!-- Chatra {literal} -->\n    <script>\n        (function(d, w, c) {\n            w.ChatraID = 'i2NLRBstFiBHpwiqt';\n            var s = d.createElement('script');\n            w[c] = w[c] || function() {\n                (w[c].q = w[c].q || []).push(arguments);\n            };\n            s.async = true;\n            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')\n            + '//call.chatra.io/chatra.js';\n            if (d.head) d.head.appendChild(s);\n        })(document, window, 'Chatra');\n    </script>\n    <!-- /Chatra {/literal} -->\n  </body>\n</html>\n",
 			"file": "bacajson.php",
-			"file_size": -1,
-			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 7546,
@@ -542,7 +539,23 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 7753,
+				"buffer_size": 8065,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "section/section-modal.php",
+			"settings":
+			{
+				"buffer_size": 1019,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 71,
 				"line_ending": "Unix"
 			}
 		},
@@ -656,11 +669,13 @@
 	},
 	"expanded_folders":
 	[
-		"/F/#my_web/htdocs/mobilanv2",
-		"/F/#my_web/htdocs/mobilanv2/section"
+		"/F/#my_web/htdocs/mobilanv2"
 	],
 	"file_history":
 	[
+		"/F/#my_web/htdocs/mobilanv2/section/section-video.php",
+		"/F/#my_web/htdocs/mobilanv2/js/bootstrap/util.js",
+		"/F/#my_web/htdocs/mobilanv2/section/section-modal.php",
 		"/F/#my_web/htdocs/mobilanv2/bacajson.php",
 		"/F/#my_web/htdocs/mobilanv2/mobilan_landing.sublime-project",
 		"/F/#my_web/htdocs/lara-mobilan/resources/views/telegram/send.blade.php",
@@ -785,10 +800,7 @@
 		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/artikel/list.blade.php",
 		"/F/#my_web/htdocs/lara-pcm/app/Http/Controllers/Admin/FileController.php",
 		"/F/#my_web/htdocs/lara-pcm/app/Http/Controllers/Admin/GalleryCategoryController.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/kelola_user/list_non_aktif.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/kelola_user/list.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/halaman/list.blade.php",
-		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/menu/list.blade.php"
+		"/F/#my_web/htdocs/lara-pcm/resources/views/admin/kelola_user/list_non_aktif.blade.php"
 	],
 	"find":
 	{
@@ -1109,7 +1121,7 @@
 						"translation.y": 234.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1125,8 +1137,8 @@
 						"selection":
 						[
 							[
-								5227,
-								6324
+								6835,
+								6835
 							]
 						],
 						"settings":
@@ -1136,10 +1148,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3547.0,
+						"translation.y": 4113.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1148,15 +1160,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7753,
+						"buffer_size": 8065,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5623,
-								5623
+								5399,
+								6843
 							]
 						],
 						"settings":
@@ -1166,7 +1178,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3172.0,
+						"translation.y": 3300.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1174,6 +1186,64 @@
 				},
 				{
 					"buffer": 3,
+					"file": "section/section-modal.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								522,
+								522
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 71,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -1198,7 +1268,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

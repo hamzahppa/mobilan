@@ -147,14 +147,14 @@
         // var originAllowed = 'http://localhost';
         var adserBaseURL  = 'https://api.mobilan.id';
         // For Demo
-        var originAllowed = 'https://sandbox.mobilan.id';
+        // var originAllowed = 'https://sandbox.mobilan.id';
         // For Real Site
-        // var originAllowed = 'https://mobilan.id';
+        var originAllowed = 'https://mobilan.id';
 
         // Ajax Form Register
         $.ajax({
             method: 'POST',
-            url: adserBaseURL + '/noapi/telegram/moberAjax',
+            url: adserBaseURL + '/noapi/telegram/ajax/mober',
             data: {
                 moberName     : moberName,
                 moberContact  : moberContact,
