@@ -124,7 +124,12 @@
     ================================================== -->
     <?php include('section/footer.php'); ?>
 
+    <!-- Modal
+    ================================================== -->
+    <?php include('section/section-modal.php'); ?>
+
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap/modal.js"></script>
     <script src="js/landio.min.js"></script>
     <script>
       function pricingbest() {
@@ -147,14 +152,14 @@
         // var originAllowed = 'http://localhost';
         var adserBaseURL  = 'https://api.mobilan.id';
         // For Demo
-        var originAllowed = 'https://sandbox.mobilan.id';
+        // var originAllowed = 'https://sandbox.mobilan.id';
         // For Real Site
-        // var originAllowed = 'https://mobilan.id';
+        var originAllowed = 'https://mobilan.id';
 
         // Ajax Form Register
         $.ajax({
             method: 'POST',
-            url: adserBaseURL + '/noapi/telegram/moberAjax',
+            url: adserBaseURL + '/noapi/telegram/ajax/mober',
             data: {
                 moberName     : moberName,
                 moberContact  : moberContact,
@@ -204,6 +209,6 @@
             if (d.head) d.head.appendChild(s);
         })(document, window, 'Chatra');
     </script>
-    <!-- /Chatra {/literal} -->    
+    <!-- /Chatra {/literal} -->
   </body>
 </html>
