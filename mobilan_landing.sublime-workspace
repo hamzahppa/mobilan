@@ -539,8 +539,24 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 8065,
-				"line_ending": "Unix"
+				"buffer_size": 8069,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mober.php",
+			"settings":
+			{
+				"buffer_size": 8093,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "section/navbar-mober.php",
+			"settings":
+			{
+				"buffer_size": 1185,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -563,8 +579,8 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 132,
-				"line_ending": "Unix"
+				"buffer_size": 130,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -669,7 +685,8 @@
 	},
 	"expanded_folders":
 	[
-		"/F/#my_web/htdocs/mobilanv2"
+		"/F/#my_web/htdocs/mobilanv2",
+		"/F/#my_web/htdocs/mobilanv2/section"
 	],
 	"file_history":
 	[
@@ -1091,7 +1108,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1121,7 +1138,7 @@
 						"translation.y": 234.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1151,7 +1168,7 @@
 						"translation.y": 4113.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1160,15 +1177,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8065,
+						"buffer_size": 8069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5399,
-								6843
+								5785,
+								5785
 							]
 						],
 						"settings":
@@ -1178,14 +1195,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3300.0,
+						"translation.y": 3852.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mober.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6050,
+								6050
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1740.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "section/navbar-mober.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1146,
+								1146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "section/section-modal.php",
 					"semi_transient": false,
 					"settings":
@@ -1211,11 +1288,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1239,24 +1316,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 132,
+						"buffer_size": 130,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1268,7 +1345,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]

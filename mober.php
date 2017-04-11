@@ -124,7 +124,12 @@
     ================================================== -->
     <?php include('section/footer.php'); ?>
 
+    <!-- Modal
+    ================================================== -->
+    <?php include('section/section-modal.php'); ?>
+
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap/modal.js"></script>
     <script src="js/landio.min.js"></script>
     <script>
       function pricingbest() {
@@ -204,6 +209,6 @@
             if (d.head) d.head.appendChild(s);
         })(document, window, 'Chatra');
     </script>
-    <!-- /Chatra {/literal} -->    
+    <!-- /Chatra {/literal} -->
   </body>
 </html>
